@@ -11,11 +11,23 @@ public class Phone extends Device {
     public Phone(String producer, String model, Double screenSize, String os) {
         this.screenSize = screenSize;
         this.os = os;
+        this.producer = producer;
+        this.model = model;
     }
 
-    public String toString() {
+    /*public String toString() {
         return "producer: " + this.producer
                 + " model: " + this.model;
+    }
+*/
+    @Override
+    public String toString() {
+        return "Phone{" +
+                "producer='" + producer + '\'' +
+                ", model='" + model + '\'' +
+                ", screenSize=" + screenSize +
+                ", os='" + os + '\'' +
+                '}';
     }
 
     @Override

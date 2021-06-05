@@ -32,5 +32,10 @@ public abstract class Car extends Device {
        return false;
     }
 
+    @Override
+    public String toString() {
+        return super.toString();
+    }
+
     public abstract void refuel();
 }

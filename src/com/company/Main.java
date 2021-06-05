@@ -3,7 +3,9 @@ package com.company;
 import com.company.animals.Animal;
 import com.company.animals.FarmAnimal;
 import com.company.animals.Human;
+import com.company.animals.Pet;
 import com.company.devices.Car;
+import com.company.devices.Device;
 import com.company.devices.Diesel;
 import com.company.devices.Phone;
 
@@ -86,10 +88,8 @@ public class Main {
         FarmAnimal pig = new FarmAnimal("pig");
         pig.setWeight(5.0);
         System.out.println("The animal's weight is: " + pig.eat() + " Kg");
-
-
-
-
+        Device myDevice = new Phone("Apple", "X", 10.5, "11.1");
+        System.out.println(myDevice.toString());
 
 
 
