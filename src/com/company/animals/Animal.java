@@ -8,6 +8,7 @@ public class Animal implements Feedable {
     final static Double DEFAULT_WEIGHT = 0.5;
     public final String species;
     private Double weight;
+    Human human;
 
     public Animal(String species) {
         this.species = species;
@@ -58,4 +59,8 @@ public class Animal implements Feedable {
     public void setWeight(Double weight) {
         this.weight = weight;
     }
+
+
+
+
 }

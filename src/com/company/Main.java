@@ -88,8 +88,21 @@ public class Main {
         FarmAnimal pig = new FarmAnimal("pig");
         pig.setWeight(5.0);
         System.out.println("The animal's weight is: " + pig.eat() + " Kg");
-        Device myDevice = new Phone("Apple", "X", 10.5, "11.1");
-        System.out.println(myDevice.toString());
+        //Device myDevice = new Phone("Apple", "X", 10.5, "11.1");
+        //System.out.println(myDevice.toString());
+
+        iphoneX.turnOn();
+        fiat.turnOn();
+
+        Pet dog = new Pet("Dog");
+        me.pet = dog;
+        dog.sell(me, giuseppe, 12000.0);
+
+        Human someone = new Human(100.0);
+        me.pet = someone;
+        someone.sell(me, giuseppe, 12000.0);
+
+
 
 
 

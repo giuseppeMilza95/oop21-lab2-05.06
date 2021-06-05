@@ -3,14 +3,16 @@ package com.company.animals;
 import com.company.animals.Animal;
 import com.company.devices.Car;
 import com.company.devices.Phone;
+import com.company.devices.Sellable;
 
-public class Human extends Animal {
+public class Human extends Animal implements Sellable {
     public String firstName;
     public String lastName;
     public Animal pet;
     public Phone phone;
     public Car car;
     public double cash;
+
 
     public final static String HUMAN_SPECIE = "homo sapiens";
 
@@ -38,4 +40,10 @@ public class Human extends Animal {
         }
     }
 
+
+    @Override
+    public boolean sell(Human seller, Human buyer, Double price) {
+        System.out.println("Human cannot be sold");
+        return false;
+    }
 }
